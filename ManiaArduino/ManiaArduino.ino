@@ -24,6 +24,7 @@ void setup() {
   pinMode(LDRPin4, INPUT);
 }
 
+
 void key(){
 
   LDRState1 = digitalRead(LDRPin1);
@@ -31,6 +32,7 @@ void key(){
   LDRState3 = digitalRead(LDRPin3);
   LDRState4 = digitalRead(LDRPin4);
 
+  
   if (LDRState1 == HIGH) {
     digitalWrite(Key1, HIGH);
   } else {
